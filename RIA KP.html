@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>КП Созвездия</title>
+<style type=text/css>
+video#camera-stream {background-color: black;}
+canvas#hidden-canvas {display: none;}
+canvas#output-canvas {background-color: black;}
+canvas#hidden-box-canvas {display: none;}
+canvas#output-box-canvas {background-color: black; box-shadow: rgb(0,0,0) 1px 1px 20px;}
+.subtitlestyle {color: white; font: 14pt Book Antiqua; background:rgb(109, 109, 0); padding:
+0.4em 0.6em;
+margin-top: 0.6em;}
+</style>
+</head>
+<body>
+<video id="camera-stream"></video>
+<canvas id="hidden-canvas"></canvas>
+<canvas id="output-canvas"></canvas>
+<div style="clear:left;"></div>
+<input style="float:left; font: 14pt Book Antiqua; padding: .4em 0.8em; border-radius: 12px;"
+type="button" value="Сфотографировать" id="buttonSnap" onclick="snapVideo()">
+<div style="font: 14pt Book Antiqua; padding: .4em 0.8em;" id="idPatternNote"></div>
+<div style="clear:left;"></div>
+<canvas id="hidden-box-canvas"></canvas>
+<canvas id="output-box-canvas"></canvas>
+<div id="panel0" style="clear:both;"></div>
+<div style="font: 18pt Book Antiqua;"><br>Соответстующий эталон:</div>
+<!-- Copyright (c) 2023 goodarget -->
+<script src="neuralnetwork.js"></script>
+</body> 
+</html>
